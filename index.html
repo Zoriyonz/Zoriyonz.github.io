@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zoriyon Zion | Software Developer</title>
+<meta name="description" content="Zoriyon Zion: 3rd-year Computer Science student at the University of Victoria, building web platforms and systems software.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--line:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#58a6ff;--accent2:#3fb950}
+@media (prefers-color-scheme: light){:root{--bg:#ffffff;--card:#f6f8fa;--line:#d0d7de;--text:#1f2328;--muted:#59636e;--accent:#0969da;--accent2:#1a7f37}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header{padding:88px 0 48px}
+.tag{font:500 13px "JetBrains Mono",monospace;color:var(--accent2);letter-spacing:.04em}
+h1{font-size:clamp(36px,7vw,56px);line-height:1.1;margin:12px 0 16px;letter-spacing:-.02em}
+.lead{font-size:19px;color:var(--muted);max-width:640px}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{border:1px solid var(--line);background:var(--card);color:var(--text);padding:9px 16px;border-radius:8px;font-weight:500;font-size:15px}
+.btn:hover{border-color:var(--accent);text-decoration:none}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font:500 13px "JetBrains Mono",monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:22px}
+.item{margin-bottom:26px}
+.row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.item h3{font-size:18px;font-weight:600}
+.date{color:var(--muted);font-size:14px;white-space:nowrap}
+.org{color:var(--muted);font-size:15px;margin-bottom:6px}
+ul{padding-left:20px}li{margin:4px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.card h3{font-size:16px;margin-bottom:4px}
+.card p{color:var(--muted);font-size:14.5px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chip{font:500 12px "JetBrains Mono",monospace;border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:var(--text)}
+.skills p{margin-bottom:8px}.skills b{display:inline-block;min-width:150px}
+footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="tag">// Victoria, BC · open to Software Development co-op</div>
+  <h1>Zoriyon Zion</h1>
+  <p class="lead">3rd-year Computer Science student at the University of Victoria with a Business minor. I build web platforms in TypeScript, systems tools in C and databases in SQL, and I run operations for two Victoria-based ventures.</p>
+  <div class="links">
+    <a class="btn primary" href="mailto:zoriyonz@uvic.ca">zoriyonz@uvic.ca</a>
+    <a class="btn" href="https://github.com/Zoriyonz">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/zoriyonz/">LinkedIn</a>
+  </div>
+</header>
+
+<section>
+  <h2>Experience</h2>
+  <div class="item">
+    <div class="row"><h3>Contributing Member, Technology &amp; Business Operations</h3><span class="date">2024 – Present</span></div>
+    <div class="org">Grinbuck Technologies Inc. · Victoria, BC</div>
+    <ul>
+      <li>Rebuilt the <a href="https://grinbuck.com">grinbuck.com</a> homepage in TypeScript with GSAP scroll animations. The portfolio section for three ventures, including the live product tabMonk, is driven by a single data file.</li>
+      <li>Developed product pages for the ClickIT venture, turning the founders' go-to-market requirements into a pilot-program page.</li>
+      <li>Audited the front-end codebase twice for dead dependencies, type safety and accessibility.</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="row"><h3>Business Operations Officer</h3><span class="date">2026 – Present</span></div>
+    <div class="org">QP Quintet Ventures Canada Inc. &amp; QP Quintet Enterprises Pvt. Ltd.</div>
+    <ul>
+      <li>Help structure a two-way Canada–India trade corridor from Victoria. I coordinate operations across both entities and built the venture's website.</li>
+      <li>Developing a B2B export channel for 3D-printed TPU parts, printed in Victoria for manufacturing partners in Kolkata.</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="row"><h3>Intern, later Contributing Member</h3><span class="date">Sept 2024 – Present</span></div>
+    <div class="org">Machhli Baba Foods LLP · Kolkata, India</div>
+    <ul><li>Configured and integrated the Petpooja POS system across store terminals for a restaurant group that now runs 13 stores.</li></ul>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card"><h3><a href="https://github.com/Zoriyonz/csc370-airline-overbooking">Airline Overbooking Database</a></h3><p>Seat reservations with loyalty-tier bumping on a BCNF-normalised schema. CSC 370, Fall 2026.</p><div class="chips"><span class="chip">MySQL</span><span class="chip">Shell</span></div></div>
+    <div class="card"><h3>Ray Tracer</h3><p>Renders 3D scenes from ray–object intersections, lighting and shadows. CSC 305, Fall 2025.</p><div class="chips"><span class="chip">C++</span></div></div>
+    <div class="card"><h3>FAT12 File System Utilities</h3><p>Tools that read a FAT12 disk image to report disk info, list directories and transfer files. CSC 360, Fall 2025.</p><div class="chips"><span class="chip">C</span><span class="chip">Linux</span></div></div>
+    <div class="card"><h3>Multithreaded Check-in Simulator</h3><p>Airline check-in simulation using threads, mutexes and condition variables. CSC 360, Fall 2025.</p><div class="chips"><span class="chip">C</span><span class="chip">pthreads</span></div></div>
+    <div class="card"><h3>3D Solar System Scene</h3><p>Interactive scene with custom shaders (ADS and rim lighting) and animation. CSC 305, Fall 2025.</p><div class="chips"><span class="chip">JavaScript</span><span class="chip">WebGL</span><span class="chip">GLSL</span></div></div>
+    <div class="card"><h3><a href="https://github.com/grinbuck-technologies/grinbuck-technologies-web">grinbuck.com</a></h3><p>Company website and venture portfolio for Grinbuck Technologies.</p><div class="chips"><span class="chip">TypeScript</span><span class="chip">GSAP</span></div></div>
+  </div>
+</section>
+
+<section class="skills">
+  <h2>Skills</h2>
+  <p><b>Languages</b> Java, Python, C, C++, JavaScript, TypeScript, SQL, HTML, CSS, GLSL</p>
+  <p><b>Tools</b> Git, GitHub, Linux, MySQL, WebGL, GSAP, Claude Code</p>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="item">
+    <div class="row"><h3>University of Victoria</h3><span class="date">Sept 2023 – Present</span></div>
+    <div class="org">BSc Computer Science, Minor in Business (3rd year)</div>
+  </div>
+</section>
+
+<section>
+  <h2>Outside the terminal</h2>
+  <p>Working on cars, piano, sim racing, basketball and football.</p>
+</section>
+
+<footer>© 2026 Zoriyon Zion · <a href="mailto:zoriyonz@uvic.ca">zoriyonz@uvic.ca</a></footer>
+</div>
+</body>
+</html>
